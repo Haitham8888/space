@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة الحجز - خدمة حجز الطيران</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">✈️ طيران السماء</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="booking.html">حجز تذكرة</a></li>
+                <li><a href="manage.html" class="active">إدارة الحجز</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>إدارة الحجز</h1>
+        <div class="manage-booking">
+            <form id="manageForm">
+                <div class="form-group">
+                    <label for="bookingRef">رقم الحجز:</label>
+                    <input type="text" id="bookingRef" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">اسم العائلة:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <button type="submit">البحث عن الحجز</button>
+            </form>
+        </div>
+        <div id="bookingDetails"></div>
+    </div>
+    <script src="manage.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجز تذكرة - خدمة حجز الطيران</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">✈️ طيران السماء</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="booking.html" class="active">حجز تذكرة</a></li>
+                <li><a href="manage.html">إدارة الحجز</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>حجز تذكرة طيران</h1>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="from">من:</label>
+                <input type="text" id="from" required>
+            </div>
+            <div class="form-group">
+                <label for="to">إلى:</label>
+                <input type="text" id="to" required>
+            </div>
+            <div class="form-group">
+                <label for="date">تاريخ السفر:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="passengers">عدد المسافرين:</label>
+                <input type="number" id="passengers" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="class">درجة السفر:</label>
+                <select id="class" required>
+                    <option value="economy">اقتصادية</option>
+                    <option value="business">رجال الأعمال</option>
+                    <option value="first">الدرجة الأولى</option>
+                </select>
+            </div>
+            <button type="submit">بحث عن الرحلات</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
